@@ -1,0 +1,99 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+@Html.AntiForgeryToken()
+
+<div class="window">
+    <header class="header-info">
+        <div class="main-info">
+            <span style="color: white;">Кирилл</span>
+            <span style="color: rgb(163, 163, 163);">online</span>
+        </div>
+        <div class="data-info">
+            <span style="color: white; font-size: 15px">21:30</span>
+            <span style="color: rgb(163, 163, 163);">MONDAY </span>
+        </div>
+        <div class="photo-buttom">
+            <img class="photo-btn" src="https://cdn-icons-png.flaticon.com/512/12217/12217176.png"/>
+        </div>
+    </header>
+    <div id="chat-window">
+    
+    @foreach (var msg in Model.FullHistory){
+        try{
+            string? role = msg["role"].ToString();
+            string? content = msg["content"].ToString();
+
+            if(role == "user"){
+                <div class="text-end">
+                    <span class="userMessage">
+                        @content
+                    </span>
+                </div>
+            }
+            else if(role == "assistant"){
+                <div class="text-start">
+                    <span class="botMessage">
+                        @content
+                    </span>
+                </div>
+            }
+        }
+        catch{
+            Console.WriteLine("Error in print history");
+        }
+    }
+    
+
+</div>
+<div class="input-text">
+        <div class="form-group">
+            <input placeholder="Enter..." id="client-text" type="text" class="form-control" required />    
+        </div>
+        <button onclick="sendMessage()"></button>
+    </div>
+</div>
+<script>
+    async function sendMessage() {
+        const input = document.getElementById('client-text');
+        const chat = document.getElementById('chat-window');
+        const query = input.value;
+        if (!query) return;
+
+        const userDiv = document.createElement("div");
+        userDiv.className = "text-end"
+        const userSpan = document.createElement("span");
+        userSpan.className = "userMessage";
+        userSpan.textContent = query;
+        userDiv.appendChild(userSpan)
+        chat.appendChild(userDiv);
+
+        input.value = "";
+        const formData = new FormData();
+        formData.append("Question", query); 
+
+        const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
+
+
+        const responce = await fetch("", {
+            method: "POST",
+            body: formData,
+            headers: {
+                "RequestVerificationToken": token 
+            }
+        });
+        if (responce.ok) {
+            const data = await responce.json();
+
+            const botDiv = document.createElement("div");
+            botDiv.className = "text-start"
+            const botSpan = document.createElement("span");
+            botSpan.className = "botMessage";
+            botSpan.textContent = data.answer;
+            botDiv.appendChild(botSpan)
+            chat.appendChild(botDiv);
+        }
+    }
+</script>

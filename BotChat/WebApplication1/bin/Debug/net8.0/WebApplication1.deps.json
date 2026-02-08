@@ -1,0 +1,166 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "WebApplication1/1.0.0": {
+        "dependencies": {
+          "GroqApiLibrary": "2.0.0"
+        },
+        "runtime": {
+          "WebApplication1.dll": {}
+        }
+      },
+      "GroqApiLibrary/2.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "8.0.7"
+        },
+        "runtime": {
+          "lib/net8.0/GroqApiLibrary.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Authorization/8.0.7": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Metadata": "8.0.7",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.1",
+          "Microsoft.Extensions.Options": "8.0.2"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.Authorization.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.724.31402"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Components/8.0.7": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "8.0.7",
+          "Microsoft.AspNetCore.Components.Analyzers": "8.0.7"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.Components.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.724.31402"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Components.Analyzers/8.0.7": {},
+      "Microsoft.AspNetCore.Metadata/8.0.7": {
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.Metadata.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.724.31402"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.1": {
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.324.11423"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/8.0.1": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.1"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.324.11423"
+          }
+        }
+      },
+      "Microsoft.Extensions.Options/8.0.2": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.1",
+          "Microsoft.Extensions.Primitives": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Options.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.224.6711"
+          }
+        }
+      },
+      "Microsoft.Extensions.Primitives/8.0.0": {}
+    }
+  },
+  "libraries": {
+    "WebApplication1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GroqApiLibrary/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-x7e99Kjcx2ShiBbckpmwyziHz1g6MPFDZQRf6FD0HgueiyjMfoj73giMu4gmM1owmUretx+3+qsfW4Mpon66rg==",
+      "path": "groqapilibrary/2.0.0",
+      "hashPath": "groqapilibrary.2.0.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Authorization/8.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Oz8BvQ1iYwOTH5QcT5I+EGphgJbqCGuBRDk1BK7Hscx1xC8Bg6H0rtYcmiWdNn/cZ4Uu5FMr6z46sEZSSZ6ycw==",
+      "path": "microsoft.aspnetcore.authorization/8.0.7",
+      "hashPath": "microsoft.aspnetcore.authorization.8.0.7.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Components/8.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rXAeBI1NpcqZ0s+LkVxe3zVJqow8GXZyTkw2pThnh/IWz/qsZshU8rve/23EXN14+l+7b3Ragt0JSO8+iwcMUw==",
+      "path": "microsoft.aspnetcore.components/8.0.7",
+      "hashPath": "microsoft.aspnetcore.components.8.0.7.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Components.Analyzers/8.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-S186J2WX2+7wM43u1kJ/BGy2fndKCSe6Swhd2f3xKr0p5VcQUUsQMhkWslmpXuNTQlZyeNw1w6IWXbzQoU347Q==",
+      "path": "microsoft.aspnetcore.components.analyzers/8.0.7",
+      "hashPath": "microsoft.aspnetcore.components.analyzers.8.0.7.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Metadata/8.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CD5PNOSnOh3XcqZaaxp0uENK4WTFifSkhWkuO9dQ/Mo7gpXwAMvrfwdqW2T7Z4YS+VXuka7Gf70f29HND9oQ3w==",
+      "path": "microsoft.aspnetcore.metadata/8.0.7",
+      "hashPath": "microsoft.aspnetcore.metadata.8.0.7.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fGLiCRLMYd00JYpClraLjJTNKLmMJPnqxMaiRzEBIIvevlzxz33mXy39Lkd48hu1G+N21S7QpaO5ZzKsI6FRuA==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/8.0.1",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/8.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RIFgaqoaINxkM2KTOw72dmilDmTrYA0ns2KW4lDz4gZ2+o6IQ894CzmdL3StM2oh7QQq44nCWiqKqc4qUI9Jmg==",
+      "path": "microsoft.extensions.logging.abstractions/8.0.1",
+      "hashPath": "microsoft.extensions.logging.abstractions.8.0.1.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Options/8.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dWGKvhFybsaZpGmzkGCbNNwBD1rVlWzrZKANLW/CcbFJpCEceMCGzT7zZwHOGBCbwM0SzBuceMj5HN1LKV1QqA==",
+      "path": "microsoft.extensions.options/8.0.2",
+      "hashPath": "microsoft.extensions.options.8.0.2.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Primitives/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bXJEZrW9ny8vjMF1JV253WeLhpEVzFo1lyaZu1vQ4ZxWUlVvknZ/+ftFgVheLubb4eZPSwwxBeqS1JkCOjxd8g==",
+      "path": "microsoft.extensions.primitives/8.0.0",
+      "hashPath": "microsoft.extensions.primitives.8.0.0.nupkg.sha512"
+    }
+  }
+}

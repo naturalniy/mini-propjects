@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "cNu1D/pxTdY=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\olga0\\OneDrive\\Desktop\\mini-projects\\BotChat\\WebApplication1\\WebApplication1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\olga0\\.nuget\\packages\\groqapilibrary\\2.0.0\\groqapilibrary.2.0.0.nupkg.sha512",
+    "C:\\Users\\olga0\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.7\\microsoft.aspnetcore.authorization.8.0.7.nupkg.sha512",
+    "C:\\Users\\olga0\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.7\\microsoft.aspnetcore.components.8.0.7.nupkg.sha512",
+    "C:\\Users\\olga0\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\8.0.7\\microsoft.aspnetcore.components.analyzers.8.0.7.nupkg.sha512",
+    "C:\\Users\\olga0\\.nuget\\packages\\microsoft.aspnetcore.metadata\\8.0.7\\microsoft.aspnetcore.metadata.8.0.7.nupkg.sha512",
+    "C:\\Users\\olga0\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.1\\microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512",
+    "C:\\Users\\olga0\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.1\\microsoft.extensions.logging.abstractions.8.0.1.nupkg.sha512",
+    "C:\\Users\\olga0\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
+    "C:\\Users\\olga0\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
